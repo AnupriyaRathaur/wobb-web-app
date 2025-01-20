@@ -8,7 +8,12 @@ Ensure seamless adaptability across desktop, tablet, and mobile devices.
 Redesign the homepage with improved layout, alignment, and information display.
 Prioritize key details like brand names, payout types, and campaign progress.
 Features Implemented
-Responsive Design: Ensures the app is optimized for mobile, tablet, and desktop screens.
+Responsive Design: Ensures the app is optimized for mobile, tablet, and desktop screens.![Screenshot (44)](https://github.com/user-attachments/assets/8be26c22-9c5f-419c-bf24-6afb044f3823)
+![Screenshot (45)](https://github.com/user-attachments/assets/ccdf0e82-2db0-4d3e-b943-4588b767c906)
+![Screenshot (56)](https://github.com/user-attachments/assets/d5ca1309-d74d-4780-b16e-84c9a79a61dd)
+![Screenshot (46)](https://github.com/user-attachments/assets/005e6765-cd24-4766-ad01-f1932e0241b3)
+
+
 Campaign Cards: Redesign of campaign cards to display essential information such as:
 Brand name
 Payout details (barter, refunds, fixed pay)
