@@ -1,0 +1,166 @@
+.homepage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .horizontal-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+  }
+  
+  .horizontal-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .horizontal-scroll::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 4px;
+  }
+  
+  .horizontal-scroll::-webkit-scrollbar-track {
+    background: #e9ecef;
+  }
+  
+  .campaign-card {
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .campaign-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .campaign-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  .campaign-card-content {
+    padding: 1rem;
+  }
+  
+  .campaign-card-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .campaign-card-content p {
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .campaign-card-content .progress {
+    margin: 10px 0;
+    background: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .campaign-card-content .progress-bar {
+    height: 10px;
+    width: var(--progress-value);
+    background: #007bff;
+  }
+  
+  
+  @keyframes progressAnimation {
+    from {
+      width: 0;
+    }
+    to {
+      width: var(--progress-value);
+    }
+  }
+  /* Media queries for responsiveness */
+
+@media (max-width: 1024px) {
+    /* Tablet landscape */
+    .homepage {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .campaign-card {
+      max-width: 45%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Tablet portrait */
+    .homepage {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .campaign-card {
+      max-width: 80%;
+      margin-bottom: 1rem;
+    }
+  
+    .horizontal-scroll {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Mobile */
+    .homepage {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .campaign-card {
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .campaign-card img {
+      height: 150px;
+    }
+  
+    .campaign-card-content h3 {
+      font-size: 1rem;
+    }
+  
+    .campaign-card-content p {
+      font-size: 0.8rem;
+    }
+  
+    .campaign-card-content .progress {
+      font-size: 0.8rem;
+    }
+  
+    .campaign-card-content .progress-bar {
+      height: 8px;
+    }
+  }
+  
+  /* Large desktop view */
+  @media (min-width: 1200px) {
+    .homepage {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .campaign-card {
+      max-width: 300px;
+    }
+  
+    .horizontal-scroll {
+      gap: 20px;
+    }
+  }
